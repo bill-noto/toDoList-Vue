@@ -10,15 +10,19 @@
 <body>
     
     <div id="app">
-        <input type="checkbox" :checked='allChecked' @click='checkUncheckAll'>
-        <input id="addNew" @keyup.enter="addNewToDo" type="text" placeholder="What you need to do?" v-model='newItem'>
-        <button @click="clearList">Clear List</button>
-        <ul>
-            <li v-for="(item, index) in todoList">
-                <input type="checkbox" @click='checkIndividual(index)' :checked='item.checked'>
-                <p>{{ index }} {{ item.description }}</p>
-            </li>
-        </ul>
+        <div id="center">
+            <div id="color">
+                <input id="move" type="checkbox" :checked='allChecked' @click='checkUncheckAll'>
+                <input id="addNew" @keyup.enter="addNewToDo" type="text" placeholder="What you need to do?" v-model='newItem'>
+                <button @click="clearList">Clear List</button>
+                <ul>
+                    <li v-for="(item, index) in todoList">
+                        <input type="checkbox" @click='checkIndividual(index)' :checked='item.checked'>
+                        <p>{{ index }} {{ item.description }}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

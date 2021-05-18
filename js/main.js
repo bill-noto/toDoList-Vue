@@ -5,8 +5,19 @@ var app = new Vue({
             newItem: '',
             allChecked: false,
             todoList: 
-            [
-               
+            [   
+                {
+                    checked: false,
+                    description: 'I am a placeholder, delete me and try for yourself.'
+                },
+                {
+                    checked: false,
+                    description: 'I am a placeholder, delete me and try for yourself.'
+                },
+                {
+                    checked: false,
+                    description: 'I am a placeholder, delete me and try for yourself.'
+                },
             ]
         }
     },

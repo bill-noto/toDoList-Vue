@@ -1,0 +1,49 @@
+@import 'reset.scss';
+
+#app {
+    width: 80%;
+    margin: 1% auto;
+    #center {
+        background-color: #EFF1F2;
+        margin: 0 auto;
+        padding: 2%;
+        #color {
+            background-color: #E7E8EB;
+            padding: 1%;
+            #move {
+                margin-left: 2% ;
+            }
+            #addNew {
+                width: 80%;
+                padding: 1%;
+                margin-left: 2%;
+            }
+            button {
+                padding: 1%;
+                margin-left: 2%;
+            }
+            ul {
+                margin-top: 1%;
+                background-color: #3564A4;
+                li {
+                    padding: 1.5%;
+                    border: 1px solid white;
+                    li:first-child {
+                        border-bottom: 1px solid white;
+                    }
+                    li:last-child {
+                        border-bottom: none;
+                    }
+                    p {
+                        display: inline;
+                        margin-left: 2%;
+                        color: white;
+                        font-weight: bold;
+                        font-family: 'Open Sans', Helvetica;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
